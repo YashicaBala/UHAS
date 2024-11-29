@@ -304,9 +304,9 @@ class PhysicalAnalyzer:
 #start of class Chemical Analyzer
 class ChemicalAnalyzer:
  """Analyzes chemical composition and toxicity levels with comprehensive error handling and detailed analysis of elements, compounds, and biomarkers."""
- def __init__(self, chemical_profile: ChemicalProfile):
- self.profile = chemical_profile
- self.logger = logging.getLogger('UHAS.ChemicalAnalyzer')
+def __init__(self, chemical_profile: ChemicalProfile):
+    self.profile = chemical_profile
+    self.logger = logging.getLogger('UHAS.ChemicalAnalyzer')
 
  def analyze_composition(self, data: pd.Series) -> Dict[str, Any]:
  """
